@@ -1,175 +1,496 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Farizqy Akhram Nugraha — Siswa SMK Telkom Purwokerto, jurusan Rekayasa Perangkat Lunak. Portfolio web developer yang minimalis dan modern." />
+  <meta name="keywords" content="Farizqy Akhram Nugraha, portfolio, web developer, SMK Telkom Purwokerto, RPL" />
+  <meta name="author" content="Farizqy Akhram Nugraha" />
+  <title>Farizqy Akhram Nugraha — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <!--Bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
 
-    <!-- my css -->
-    <link rel="stylesheet" href="style.css">
-    
-    <title>website pertamaku</title>
-  </head>
-  <body id="home">
-    <!--awal navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
-        <div class="container ">
-          <a class="navbar-brand" href="#">Farizqy</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+  <!-- ════════ NAVBAR ════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">FAN<span></span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"     class="nav-link active" id="nl-home">Home</a></li>
+        <li><a href="#about"    class="nav-link"        id="nl-about">About</a></li>
+        <li><a href="#skills"   class="nav-link"        id="nl-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link"        id="nl-projects">Projects</a></li>
+        <li><a href="#contact"  class="nav-link"        id="nl-contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════ HERO ════════ -->
+  <section id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="label">Available for Collaboration</div>
+        <h1>
+          Farizqy<br/>
+          Akhram<br/>
+          <span class="line-thin">Nugraha</span>
+        </h1>
+        <p>
+          Siswa SMK Telkom Purwokerto jurusan Rekayasa Perangkat Lunak yang
+          antusias dalam dunia pengembangan web dan teknologi digital.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary" id="hero-btn-projects">
+            Lihat Projects
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn-outline" id="hero-btn-contact">
+            Hubungi Saya
+          </a>
         </div>
-      </nav>
-      <!--akhir navbar-->
-
-      <!--Jumbotron-->
-      <div class="jumbotron text-center">
-        <img src="D:\TUGAS ICI\TUGAS KELAS 11\EKSTRAKULIKULER\Praktek\praktek\img\download.jpg"ini foto saya" width="200" height="200" class="rounded-circle img-thumbnail">
-        <h1 class="display-4">Farizqy Akhram Nugraha</h1>
-        <p class="lead">Saya adalah siswa smk telkom purwokerto.</p>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,144C384,160,480,160,576,133.3C672,107,768,53,864,53.3C960,53,1056,107,1152,133.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L40,96C80,128,160,192,240,192C320,192,400,128,480,106.7C560,85,640,107,720,133.3C800,160,880,192,960,213.3C1040,235,1120,245,1200,213.3C1280,181,1360,107,1400,69.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>-->
-        <!--<hr class="my-4">-->
       </div>
-      <!--akhir jumbotron-->
 
-      <!--about-->
-      <section id="about">
-        <div class="container">
-          <div class="row text-center mb-3">
-            <div class="col">
-              <h2>About Me</h2>
-            </div>
+      <div class="hero-visual">
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring-2"></div>
+          <div class="avatar-svg">
+            <!-- Stylish SVG Avatar -->
+            <svg width="65%" height="65%" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Body -->
+              <ellipse cx="100" cy="185" rx="60" ry="35" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+              <!-- Shirt detail -->
+              <path d="M55 170 Q100 155 145 170 L145 220 L55 220Z" fill="#222" stroke="#2e2e2e" stroke-width="1"/>
+              <!-- Collar -->
+              <path d="M88 155 L100 175 L112 155" fill="none" stroke="#333" stroke-width="1.5"/>
+              <!-- Neck -->
+              <rect x="92" y="130" width="16" height="28" rx="8" fill="#2a2a2a" stroke="#333" stroke-width="1"/>
+              <!-- Head -->
+              <ellipse cx="100" cy="110" rx="42" ry="48" fill="#1e1e1e" stroke="#2e2e2e" stroke-width="1"/>
+              <!-- Hair top -->
+              <path d="M58 100 Q60 62 100 60 Q140 62 142 100 Q130 70 100 68 Q70 70 58 100Z" fill="#111" stroke="#333" stroke-width="0.5"/>
+              <!-- Hair side left -->
+              <path d="M58 100 Q52 115 56 125 Q60 120 64 110Z" fill="#111"/>
+              <!-- Hair side right -->
+              <path d="M142 100 Q148 115 144 125 Q140 120 136 110Z" fill="#111"/>
+              <!-- Eyes -->
+              <ellipse cx="84" cy="110" rx="7" ry="8" fill="#0a0a0a" stroke="#333" stroke-width="1"/>
+              <ellipse cx="116" cy="110" rx="7" ry="8" fill="#0a0a0a" stroke="#333" stroke-width="1"/>
+              <!-- Eye shine -->
+              <circle cx="82" cy="107" r="2" fill="white" opacity="0.8"/>
+              <circle cx="114" cy="107" r="2" fill="white" opacity="0.8"/>
+              <!-- Eyebrows -->
+              <path d="M76 99 Q84 95 92 99" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+              <path d="M108 99 Q116 95 124 99" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+              <!-- Nose -->
+              <path d="M97 118 Q100 124 103 118" stroke="#444" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <!-- Mouth / smile -->
+              <path d="M88 133 Q100 142 112 133" stroke="#555" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <!-- Ear left -->
+              <ellipse cx="58" cy="114" rx="5" ry="7" fill="#1a1a1a" stroke="#2e2e2e" stroke-width="1"/>
+              <!-- Ear right -->
+              <ellipse cx="142" cy="114" rx="5" ry="7" fill="#1a1a1a" stroke="#2e2e2e" stroke-width="1"/>
+              <!-- Glasses left lens -->
+              <rect x="75" y="104" width="20" height="14" rx="4" fill="none" stroke="#444" stroke-width="1.2"/>
+              <!-- Glasses right lens -->
+              <rect x="105" y="104" width="20" height="14" rx="4" fill="none" stroke="#444" stroke-width="1.2"/>
+              <!-- Glasses bridge -->
+              <line x1="95" y1="111" x2="105" y2="111" stroke="#444" stroke-width="1.2"/>
+              <!-- Glasses arm left -->
+              <line x1="75" y1="111" x2="68" y2="111" stroke="#444" stroke-width="1.2"/>
+              <!-- Glasses arm right -->
+              <line x1="125" y1="111" x2="132" y2="111" stroke="#444" stroke-width="1.2"/>
+            </svg>
           </div>
-          <div class="row justify-content-center fs-5 text-center">
-            <div class="col-md-4">
-              <p>Aku Berasal Dari Purwokerto Yang Lebih Tepatnya Di Purwokerto Utara, Aku Adalah Seorang Pelajar Dari SMK TELKOM Purwokerto Dengan Jurusan Rekayasa Perangkat Lunak. Saya Memiliki Hobi Yaitu Bermain Games,Membaca Komik, Dan Lainnya,Makanan Favorit Saya Yaitu Burger..</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ ABOUT ════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="fade-in">
+          <p class="section-label">Tentang Saya</p>
+          <h2 class="section-title">Halo, saya Farizqy 👋</h2>
+          <div class="divider"></div>
+          <div class="about-stats">
+            <div class="stat-card fade-in fade-in-delay-1">
+              <div class="num">11</div>
+              <div class="lbl">Kelas</div>
+            </div>
+            <div class="stat-card fade-in fade-in-delay-2">
+              <div class="num">RPL</div>
+              <div class="lbl">Jurusan</div>
+            </div>
+            <div class="stat-card fade-in fade-in-delay-3">
+              <div class="num">3+</div>
+              <div class="lbl">Projects</div>
+            </div>
+            <div class="stat-card fade-in fade-in-delay-4">
+              <div class="num">∞</div>
+              <div class="lbl">Semangat</div>
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,202.7C384,213,480,171,576,170.7C672,171,768,213,864,224C960,235,1056,213,1152,186.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      </section>
-      <!--akhir about-->
+        <div class="about-text fade-in fade-in-delay-2">
+          <p>
+            Halo! Saya <strong style="color:var(--text-bright)">Farizqy Akhram Nugraha</strong>, siswa kelas XI SMK Telkom Purwokerto
+            dari Purwokerto Utara dengan jurusan Rekayasa Perangkat Lunak (RPL).
+          </p>
+          <p>
+            Saya sangat tertarik dalam dunia pengembangan web, mulai dari desain antarmuka
+            hingga logika backend. Dengan semangat belajar yang tinggi, saya terus mengeksplorasi
+            berbagai teknologi dan tools modern.
+          </p>
+          <p>
+            Di luar coding, saya hobi bermain games dan membaca komik — dua hal yang melatih
+            kemampuan berpikir strategis dan kreatif. Oh ya, makanan favorit saya adalah
+            <span style="color:var(--white)">🍔 Burger</span>!
+          </p>
+          <a href="#contact" class="btn-outline" id="about-btn-contact" style="margin-top: 1rem; display: inline-flex;">
+            Mulai Percakapan →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!--Projects-->
-      <section id="projects">
-        <div class="container">
-          <div class="row text-center mb-3">
-            <div class="col">
-              <h2>My Projects</h2>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="D:\TUGAS ICI\TUGAS KELAS 11\EKSTRAKULIKULER\Praktek\praktek\img\projects\1.jpg" class="card-img-top" alt="Project1">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="D:\TUGAS ICI\TUGAS KELAS 11\EKSTRAKULIKULER\Praktek\praktek\img\projects\2.jpg" class="card-img-top" alt="Project2">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="D:\TUGAS ICI\TUGAS KELAS 11\EKSTRAKULIKULER\Praktek\praktek\img\projects\3.jpg" class="card-img-top" alt="Project3">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="D:\TUGAS ICI\TUGAS KELAS 11\EKSTRAKULIKULER\Praktek\praktek\img\projects\4.jpg" class="card-img-top" alt="Project4">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="D:\TUGAS ICI\TUGAS KELAS 11\EKSTRAKULIKULER\Praktek\praktek\img\projects\5.jpg" class="card-img-top" alt="Project5">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
+  <!-- ════════ SKILLS ════════ -->
+  <section id="skills" class="section" style="background: var(--black);">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Keahlian</p>
+        <h2 class="section-title">Tech Stack & Skills</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item fade-in fade-in-delay-1">
+          <div class="skill-icon">🌐</div>
+          <div class="skill-info">
+            <div class="name">HTML5</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="90%"></div></div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L40,160C80,192,160,256,240,245.3C320,235,400,149,480,144C560,139,640,213,720,202.7C800,192,880,96,960,90.7C1040,85,1120,171,1200,202.7C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-      </section>
-      <!--Akhir projects-->
-
-      <!--contact-->
-      <section id="contact">
-        <div class="container">
-          <div class="row text-center mb-3">
-            <div class="col">
-              <h2>Contact Me</h2>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <form>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="name">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="email">
-                </div>
-                <div class="mb-3">
-                  <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" id="pesan" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Kirim</button>
-              </form>
-            </div>
+        <div class="skill-item fade-in fade-in-delay-2">
+          <div class="skill-icon">🎨</div>
+          <div class="skill-info">
+            <div class="name">CSS3</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="80%"></div></div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,32L30,69.3C60,107,120,181,180,181.3C240,181,300,107,360,106.7C420,107,480,181,540,202.7C600,224,660,192,720,170.7C780,149,840,139,900,149.3C960,160,1020,192,1080,186.7C1140,181,1200,139,1260,106.7C1320,75,1380,53,1410,42.7L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
-      </section>
-      <!--akhir contact-->
+        <div class="skill-item fade-in fade-in-delay-3">
+          <div class="skill-icon">⚡</div>
+          <div class="skill-info">
+            <div class="name">JavaScript</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="70%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item fade-in fade-in-delay-4">
+          <div class="skill-icon">🅱️</div>
+          <div class="skill-info">
+            <div class="name">Bootstrap</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="75%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item fade-in fade-in-delay-1">
+          <div class="skill-icon">🐘</div>
+          <div class="skill-info">
+            <div class="name">PHP</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="60%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item fade-in fade-in-delay-2">
+          <div class="skill-icon">🗄️</div>
+          <div class="skill-info">
+            <div class="name">MySQL</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="65%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item fade-in fade-in-delay-3">
+          <div class="skill-icon">🐱</div>
+          <div class="skill-info">
+            <div class="name">Git & GitHub</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="70%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item fade-in fade-in-delay-4">
+          <div class="skill-icon">💻</div>
+          <div class="skill-info">
+            <div class="name">VS Code</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="88%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!--Footer-->
-      <footer class="bg-primary text-white text-center pb-5">
-        <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/icimaru_/" class="text-white fw-bold">Farizqy Akhram Nugraha</a></p>
-      </footer>
-      <!--Akhir footer-->
+  <!-- ════════ PROJECTS ════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Portofolio</p>
+        <h2 class="section-title">Projects Saya</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="projects-grid">
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        <div class="project-card fade-in fade-in-delay-1">
+          <div class="project-thumb">
+            <div class="thumb-bg" style="background: linear-gradient(135deg, #111 25%, #1a1a1a 100%);"></div>
+            <div class="project-thumb-icon">🌐</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <h3>Website Portofolio</h3>
+            <p>Website portofolio pribadi pertama yang dibuat dari nol menggunakan HTML, CSS, dan JavaScript. Menampilkan profil, keahlian, dan project.</p>
+            <a href="#" class="project-link" id="proj-link-1">
+              Lihat Project
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <div class="project-card fade-in fade-in-delay-2">
+          <div class="project-thumb">
+            <div class="thumb-bg" style="background: linear-gradient(135deg, #111 25%, #181818 100%);"></div>
+            <div class="project-thumb-icon">🛒</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <h3>Web E-Commerce Sederhana</h3>
+            <p>Aplikasi toko online sederhana dengan fitur katalog produk, keranjang belanja, dan manajemen pesanan menggunakan PHP dan MySQL.</p>
+            <a href="#" class="project-link" id="proj-link-2">
+              Lihat Project
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
 
-  </body>
+        <div class="project-card fade-in fade-in-delay-3">
+          <div class="project-thumb">
+            <div class="thumb-bg" style="background: linear-gradient(135deg, #111 25%, #141414 100%);"></div>
+            <div class="project-thumb-icon">📝</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <h3>Todo List App</h3>
+            <p>Aplikasi manajemen tugas harian yang interaktif dengan fitur tambah, hapus, dan tandai tugas selesai. Data tersimpan di localStorage.</p>
+            <a href="#" class="project-link" id="proj-link-3">
+              Lihat Project
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ CONTACT ════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="fade-in">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title">Mari Berkolaborasi!</h2>
+          <div class="divider"></div>
+          <p>
+            Apakah kamu punya project menarik atau sekadar ingin menyapa?
+            Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk
+            kesempatan baru dan kolaborasi yang seru.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/icimaru_/" target="_blank" class="social-link" id="social-instagram">
+              <div class="social-icon">📸</div>
+              <div>
+                <div class="social-name">Instagram</div>
+                <div class="social-handle">@icimaru_</div>
+              </div>
+            </a>
+            <a href="https://github.com/FarizqyAkhramN" target="_blank" class="social-link" id="social-github">
+              <div class="social-icon">🐙</div>
+              <div>
+                <div class="social-name">GitHub</div>
+                <div class="social-handle">FarizqyAkhramN</div>
+              </div>
+            </a>
+            <a href="mailto:farizqy@email.com" class="social-link" id="social-email">
+              <div class="social-icon">📧</div>
+              <div>
+                <div class="social-name">Email</div>
+                <div class="social-handle">farizqy@email.com</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form fade-in fade-in-delay-2" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name">Nama</label>
+              <input type="text" id="form-name" placeholder="Nama lengkap kamu" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" placeholder="email@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-subject">Subjek</label>
+            <input type="text" id="form-subject" placeholder="Tentang apa?" />
+          </div>
+          <div class="form-group">
+            <label for="form-message">Pesan</label>
+            <textarea id="form-message" rows="5" placeholder="Tuliskan pesanmu di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="form-submit-btn">
+            Kirim Pesan
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#home" class="footer-logo">FAN<span style="display:inline-block;width:6px;height:6px;background:var(--text-dim);border-radius:50%;margin-left:3px;vertical-align:middle;"></span></a>
+      <p class="footer-copy">
+        Dibuat dengan ❤️ oleh
+        <a href="https://www.instagram.com/icimaru_/" target="_blank">Farizqy Akhram Nugraha</a>
+        &nbsp;·&nbsp; 2024
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // ── Custom Cursor ──
+    const dot  = document.getElementById('cursor-dot');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+
+    function animCursor() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      dot.style.left  = mx + 'px';
+      dot.style.top   = my + 'px';
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animCursor);
+    }
+    animCursor();
+
+    document.querySelectorAll('a, button, .skill-item, .project-card, .stat-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.style.width  = '52px';
+        ring.style.height = '52px';
+        ring.style.borderColor = 'rgba(255,255,255,0.6)';
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.style.width  = '36px';
+        ring.style.height = '36px';
+        ring.style.borderColor = 'rgba(255,255,255,0.35)';
+      });
+    });
+
+    // ── Navbar scroll ──
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 30);
+      updateActiveNav();
+    });
+
+    // ── Mobile menu ──
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => links.classList.remove('open'));
+    });
+
+    // ── Active nav highlight ──
+    function updateActiveNav() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    }
+
+    // ── Scroll reveal ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Animate skill bars when visible
+          entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.width;
+          });
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    // Also observe skill bars directly
+    document.querySelectorAll('.skill-item').forEach(el => {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+              setTimeout(() => { bar.style.width = bar.dataset.width; }, 200);
+            });
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      io.observe(el);
+    });
+
+    // ── Contact form ──
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('form-submit-btn');
+      btn.textContent = '✓ Pesan Terkirim!';
+      btn.style.background = '#2e2e2e';
+      btn.style.color = '#fff';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = 'Kirim Pesan <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>';
+        btn.style.background = '';
+        btn.style.color = '';
+        btn.disabled = false;
+        document.getElementById('contact-form').reset();
+      }, 3000);
+    }
+  </script>
+</body>
 </html>
